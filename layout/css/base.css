@@ -1,0 +1,500 @@
+/*
+
+Author: Ken Rosaka - ken210.com
+
+
+*/
+
+
+/* css reset */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,nav {
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+}
+
+fieldset,img{border: 0}
+
+textarea {
+    resize: none;
+    overflow: hidden;
+    line-height: 1em;
+}
+
+header,nav,footer,article,section,aside {display: block}
+
+body{background: url(img/bg.gif) repeat}
+
+h1,h2{line-height: 0}
+
+em {font-style:normal}
+
+embed {position:relative; z-index:1}
+
+a {outline:none}
+
+/* misc */
+
+.hidden{display: none}
+.clear{clear: both}
+.clearLeft{clear: left}
+.clearRight{clear: right}
+.alignLeft{float: left}
+.alignRight{float: right}
+
+.border6, .border3, .border2,
+.acaloi .porquePeople img{
+	border-color:#e44626;
+	border-style: solid;
+}
+
+.border6{border-width:6px}
+.border3{border-width:3px}
+.border2{border-width:2px}
+
+.marginLeft13 {margin-left:13px}
+
+ul.accordion li ul{display:none}
+
+
+
+/* containers */
+
+div#wrap {
+    width: 986px;
+    margin: 0 auto;
+    background: #fff;
+    -moz-box-shadow: 0 0 10px #000;
+    -webkit-box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 10px #000;
+}
+
+header {
+	height: 479px;
+	width:986px;
+	/*
+		overflow-x:hidden;
+		overflow-y:visible;
+		*/
+}
+
+header article {
+	width:986px;
+}
+
+header article a:hover {opacity: 0.8}
+
+header article#articleHome a:hover {opacity: 1}
+
+header article.tab{
+	height:365px;
+	z-index:4;
+	display:none;
+}
+
+header a.closeTab, article.tab div.hotProducts,
+#tabBikes a.readMore, #tabFitness a.readMore {
+	display:block;
+	height:30px;
+	position:absolute;
+	top:0;
+}
+
+header a.closeTab,
+#tabBikes a.readMore,
+#tabFitness a.readMore {
+	background-image:url(../img/tabMenu/sprite_head.png);
+}
+
+header a.closeTab {
+	width:120px;
+	right:0;
+	background-position:top left;
+}
+
+#tabBikes a.readMore,
+#tabFitness a.readMore {
+	width:196px;
+	border-left-width: 2px;
+	border-left-style: solid;
+	right:122px;
+}
+
+#tabBikes a.readMore {
+	background-position:left -30px;
+	border-left-color:#d0b7b6;
+}
+
+#tabFitness a.readMore {
+	background-position:left -60px;
+	border-left-color:#4eb8b3;
+}
+
+article.tab div.hotProducts {
+	width: 720px;
+	left:144px;
+	overflow:visible;
+}
+
+article.tab footer.hotProducts {
+	width:986px;
+	height:36px;
+	position:absolute;
+	right:0;
+	bottom:0;
+}
+
+header #tabBikes a.closeTab, article#tabBikes nav.hotProducts {background-color:#692231}
+header #tabFitness a.closeTab, article#tabFitness nav.hotProducts  {background-color:#329695}
+header #tabTheCaloi a.closeTab {background-color:#ba3c13}
+header #tabMovement a.closeTab {background-color:#7c8f00}
+
+.hotProducts div.bg {
+	height:46px;
+	background-repeat:no-repeat;
+}
+
+.hotProducts h3{
+	color:#fff;
+	font-size:1.4em;
+	padding-top:8px;
+}
+
+#tabBikes .hotProducts div.bg{background-image:url(../img/tabMenu/hotProductBg_bikes.gif)}
+#tabFitness .hotProducts div.bg{background-image:url(../img/tabMenu/hotProductBg_fitness.gif)}
+
+#tabBikes .hotProducts h3{margin-left:41px}
+#tabFitness .hotProducts h3{margin-left:140px}
+
+article#tabBikes{
+	background:#8c2d47 url(../img/tabMenu/bikesArticleBg.gif);
+	padding:60px 11px;
+	width:964px;
+	height:245px;
+}
+
+article#tabFitness{
+	background:#4EB8B3;
+	height:335px;
+	padding:15px 30px 15px 40px;
+	width:916px;
+}
+
+
+
+article#tabTheCaloi,
+article#tabMovement,
+article#tabUniverses {
+	padding:60px 15px;
+	width:956px;
+	height:245px;
+}
+
+
+article#tabTheCaloi{background:#e95935}
+
+article#tabMovement{background:#94ae0a}
+
+article#tabUniverses{background:url("img/bg_universes.gif") #5E84BF}
+
+#tabTheCaloi h2,
+#tabMovement h2 {
+	font-size:2.5em;
+	text-indent:-9px;
+	margin-top:18px;
+}
+
+#tabTheCaloi a, #tabMovement a, #tabUniverses a{
+	color:#fff;
+}
+
+#tabTheCaloi p,
+#tabMovement p,
+#tabUniverses p{
+	margin-top:5px;
+}
+
+#tabTheCaloi img,
+#tabMovement img{
+	border:#fff solid 1px;
+}
+
+#tabTheCaloi li.subItem,
+#tabMovement li.subItem,
+#tabUniverses li.subItem{
+	width:161px;
+	float:left;
+	height:300px;
+	margin:0 15px;
+	list-style:none;
+}
+
+#tabUniverses li.disabled{
+	opacity:0.4;
+}
+
+#tabUniverses li.disabled p{
+	color:#fff;
+}
+
+#tabBikes ul.products li{
+	margin-top:15px;
+}
+
+#tabBikes li.singleBike,
+#tabFitness li.singleTreadmill {
+	float:left;
+	list-style:none;
+}
+
+#tabBikes li.singleBike {
+	text-align:center;
+	width:241px;
+}
+
+#tabFitness li.singleTreadmill {
+	margin:59px 6px 0;
+	overflow:visible;
+	width:217px;
+}
+
+#tabBikes .singleBike p,
+#tabFitness .singleTreadmill p {
+	width:200px;
+	/*text-align:left;*/
+}
+
+#tabBikes .singleBike p {
+	margin:0 auto
+}
+
+#tabFitness .singleTreadmill p {
+	color:#fff;
+	font-size:1em;
+}
+
+
+#tabBikes h2 {
+	margin-top:5px;
+}
+
+#tabFitness h2 {
+	margin-top:10px;
+}
+
+#tabBikes h2 {
+	font-size:1.7em;
+	color:#333
+}
+
+#tabFitness h2 {
+	font-size:1.5em;
+	color:#fff;
+/*	margin-right:-7px;*/
+}
+
+nav.hotProducts {
+	bottom:0;
+	right:0;
+	height:36px;
+	width:986px;
+	position:absolute;
+}
+
+#tabBikes nav.hotProducts {
+	background:#692231
+}
+
+#tabFitness nav.hotProducts {
+	background:#329695
+}
+
+#tabBikes nav.hotProducts ul,
+#tabFitness nav.hotProducts ul{
+	margin-left:156px
+}
+
+
+nav.hotProducts li a {
+	display:block;
+	height:36px;
+	float:left;
+	background-image:url("img/sprite_bts.gif");
+}
+
+#tabBikes nav.hotProducts li a {
+	border-left:1px solid #d0b7b6;
+	border-right:1px solid #d0b7b6;
+}
+
+#tabFitness nav.hotProducts li a {
+	border-left:1px solid #3db9b6;
+	border-right:1px solid #3db9b6;
+}
+
+#tabBikes nav.hotProducts li a.mountainBike {
+	width:174px;
+	border-left:2px solid #d0b7b6;
+}
+
+#tabBikes nav.hotProducts li a.speed {
+	width:158px;
+	background-position:left -36px;
+}
+
+
+#tabBikes nav.hotProducts li a.mobilidade {
+	width:152px;
+	background-position:left -72px;
+}
+
+
+#tabBikes nav.hotProducts li a.infantoJuvenil {
+	width:180px;
+	background-position:left -108px;
+	border-right:2px solid #d0b7b6;
+}
+
+#tabFitness nav.hotProducts li a.esteiras {
+	width:174px;
+	background-position:left -144px;
+	border-left:2px solid #3db9b6;
+}
+
+#tabFitness nav.hotProducts li a.ergometricas {
+	width:158px;
+	background-position:left -180px;
+}
+
+
+#tabFitness nav.hotProducts li a.transports {
+	width:152px;
+	background-position:left -216px;
+}
+
+
+#tabFitness nav.hotProducts li a.remo {
+	width:180px;
+	background-position:left -252px;
+	border-right:2px solid #3db9b6;
+}
+
+#tabUniverses h2 {
+	font-size:32px;
+	margin:-11px 165px 15px
+}
+
+div#errorMsg {
+	width:301px;
+	background:transparent url('img/errorShadow.png') no-repeat;
+	overflow:hidden;
+	top:50%;
+	left:50%;
+	margin-left:-150px;
+	margin-top:-150px;
+	position:absolute;
+	z-index:200;
+	padding-bottom:3px;
+}
+
+#errorMsg div.content,
+#errorMsg a.closeMsg {
+	background:#666; /* default */
+	border:1px solid #fff;
+	color:#fff;
+}
+
+
+#errorMsg a.closeMsg {
+	font-size:1.1em;
+	display:block;
+	margin-left:184px;
+	height:11px;
+	width:84px;
+	border-bottom:none;
+	position:relative;
+	z-index:150;
+	text-align:center;
+	padding-top:6px;
+}
+
+#errorMsg div.content {
+	margin-right:3px;
+	margin-top:-1px;
+	position:relative;
+	z-index:100;
+	padding:40px;
+	text-align:center;
+}
+
+#errorMsg .content div.text {
+	text-align:left;
+	font-size:1.2em;
+	margin-top:30px;
+}
+
+
+.bikes #errorMsg div.content,
+.bikes #errorMsg a.closeMsg {background:#912c43}
+
+.fitness #errorMsg div.content,
+.fitness #errorMsg a.closeMsg {background:#459194}
+
+.acaloi #errorMsg div.content,
+.acaloi #errorMsg a.closeMsg {background:#ba3c13}
+
+.movimento #errorMsg div.content,
+.movimento #errorMsg a.closeMsg {background:#7c8f00}
+
+.bikeDetalhe #errorMsg div.content,
+.bikeDetalhe #errorMsg a.closeMsg {background:#87877e}
+
+a.commonButton {
+	display:inline;
+	border:#fff solid 1px;
+	padding: 2px 5px;
+	text-align:center;
+	color:#fff;
+	background:#666;
+	-moz-box-shadow: 1px 1px 0 #000;
+    -webkit-box-shadow: 1px 1px 0 #000;
+    box-shadow: 1px 1px 0 #000;
+}
+
+.bikes a.commonButton {
+	background:#912C43;
+}
+	div#btFiltrarBusca {
+		clear: left;
+		margin: 30px 0 0 5px;
+	}
+
+div#errorCheckboxes {
+	margin-top:20px;
+	padding-left:50px;
+	text-align:left;
+}
+
+#errorCheckboxes input {
+	margin-top:5px;
+}
+
+header article h1 a {
+	padding-left: 18px;
+}
+
+header article h1 a:hover {
+	background: url("img/h1_mouseover.png") no-repeat 0 17px;
+	opacity: 1;
+}
+
+div.content {
+	position:relative;
+}

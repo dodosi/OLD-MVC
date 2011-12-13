@@ -1,0 +1,29 @@
+.navMenu{
+    list-style: none;
+    background: #9B410E;
+    width:100%
+}
+
+.navMenu li {
+     display: inline;
+     width:150px;
+}
+
+.navSubMenu {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    background: #f0c040;
+    width:900px;
+}
+
+.navSubMenu li{
+    display: inline;
+}
+
+.navMenu li a{
+    width: 150px;
+    height: 30px;
+    display: inline-block;
+}

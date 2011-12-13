@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond $1 !^(index\.php|layout/img/|layout/css/|layout/js/|cms)
+RewriteRule ^(.*)$ index.php?url=$1
