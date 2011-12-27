@@ -1,0 +1,8 @@
+#Objetivo
+Onde trabalho desenvolvi uma estrutura de trabalho orientado a objeto seguindo o padrão MVC, que possibilitou aproveitar os componentes já existentes desenvolvidas em PHP pelos outros programadores, bem como utilizar a Engine de template Smarty na camada de visualização. A camada DAO foi desenvolvida seguindo os exemplos do livro PHP Programando Orientado a Objeto da editora Novatec. 
+
+Aprendi muito sobre MVC e Orientação a objetos nesse projeto, por isso estou disponiilizando para que possam usa-lo como exemplo na hora que for desenvolver o seu seu miniframework, pois o mesmo está desenvolvido de uma forma simples e objetiva.
+
+Lembrando que não recomendo como ferramenta de trabalho, pois não consta muita gente utilizando e não foi bem testado. O grande objetivo desse projeto foi o meu desenvolvimento pessoal e o aproveitamento da estrutura de trabalho da empresa.
+
+Recomendo o uso de um FW que tenha uma comunidade ativa e uma com boa documentação, porem é importante que desenvolva o seu própio, como forma de aprendizado.
